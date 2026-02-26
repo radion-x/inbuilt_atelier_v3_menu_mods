@@ -739,7 +739,7 @@ class AIChat {
         const resultsDiv = document.createElement('div');
         resultsDiv.className = 'chat-message ai search-results';
 
-        let html = `<div style="margin-bottom: 12px; font-size: 14px; color: #6b7280;"><strong style="color: #4A5D4F;">🔍 Search Results for:</strong> "${result.query}"</div>`;
+        let html = `<div style="margin-bottom: 12px; font-size: 14px; color: #6b7280;"><strong style="color: #111111;">🔍 Search Results for:</strong> "${result.query}"</div>`;
         
         if (result.results && result.results.length > 0) {
             html += '<div style="background: #f9fafb; border-radius: 8px; padding: 12px; border: 1px solid #e5e7eb;">';
@@ -747,7 +747,7 @@ class AIChat {
                 html += `
                     <div style="margin-bottom: ${index < result.results.length - 1 ? '12px' : '0'}; padding-bottom: ${index < result.results.length - 1 ? '12px' : '0'}; border-bottom: ${index < result.results.length - 1 ? '1px solid #e5e7eb' : 'none'};">
                         <div style="font-weight: 600; margin-bottom: 4px;">
-                            <a href="${item.url}" target="_blank" rel="noopener noreferrer" style="color: #4A5D4F; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#3b4d40'" onmouseout="this.style.color='#4A5D4F'">
+                            <a href="${item.url}" target="_blank" rel="noopener noreferrer" style="color: #111111; text-decoration: none; transition: color 0.2s;" onmouseover="this.style.color='#333333'" onmouseout="this.style.color='#111111'">
                                 ${item.title}
                             </a>
                         </div>
@@ -783,8 +783,8 @@ class AIChat {
         } else {
             let html = `
                 <div style="margin-bottom: 12px; font-size: 14px; color: #6b7280;">
-                    <strong style="color: #4A5D4F;">🌐 Webpage Analysis:</strong> 
-                    <a href="${result.url}" target="_blank" rel="noopener noreferrer" style="color: #4A5D4F; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+                    <strong style="color: #111111;">🌐 Webpage Analysis:</strong> 
+                    <a href="${result.url}" target="_blank" rel="noopener noreferrer" style="color: #111111; text-decoration: none;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
                         ${result.url}
                     </a>
                 </div>

@@ -67,7 +67,7 @@ class PageHeroAnimation {
             // Draw particle
             this.ctx.beginPath();
             this.ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-            this.ctx.fillStyle = `rgba(235, 201, 68, ${particle.opacity * 0.8})`; // Use Wattle Gold
+            this.ctx.fillStyle = `rgba(155, 128, 96, ${particle.opacity * 0.8})`; // Antique Brass accent
             this.ctx.fill();
             
             // Draw connections
@@ -80,7 +80,7 @@ class PageHeroAnimation {
                     this.ctx.beginPath();
                     this.ctx.moveTo(particle.x, particle.y);
                     this.ctx.lineTo(otherParticle.x, otherParticle.y);
-                    this.ctx.strokeStyle = `rgba(235, 201, 68, ${0.2 * (1 - distance / 100)})`; // Use Wattle Gold
+                    this.ctx.strokeStyle = `rgba(155, 128, 96, ${0.2 * (1 - distance / 100)})`; // Antique Brass accent
                     this.ctx.lineWidth = 1;
                     this.ctx.stroke();
                 }
@@ -98,9 +98,9 @@ class PageHeroAnimation {
             this.canvas.width / 2
         );
         
-        gradient.addColorStop(0, 'rgba(26, 26, 46, 0.8)');
-        gradient.addColorStop(0.5, 'rgba(15, 15, 35, 0.9)');
-        gradient.addColorStop(1, 'rgba(10, 10, 20, 1)');
+        gradient.addColorStop(0, 'rgba(26, 26, 26, 0.8)');
+        gradient.addColorStop(0.5, 'rgba(17, 17, 17, 0.9)');
+        gradient.addColorStop(1, 'rgba(10, 10, 10, 1)');
         
         this.ctx.fillStyle = gradient;
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);

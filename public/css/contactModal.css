@@ -21,7 +21,7 @@
 .contact-modal-backdrop {
     position: absolute;
     inset: 0;
-    background: rgba(28, 28, 30, 0.55);
+    background: rgba(17, 17, 17, 0.55);
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
 }
@@ -44,12 +44,12 @@
 
 /* Content card */
 .contact-modal-content {
-    background: var(--color-bg-body, #F7F4EF);
+    background: var(--color-bg-body, #FAFAFA);
     border-radius: 20px;
     overflow: hidden;
     box-shadow:
-        0 24px 80px rgba(28, 28, 30, 0.18),
-        0 4px 16px rgba(28, 28, 30, 0.08);
+        0 24px 80px rgba(17, 17, 17, 0.18),
+        0 4px 16px rgba(17, 17, 17, 0.08);
     display: flex;
     flex-direction: column;
     max-height: 90vh;
@@ -75,7 +75,7 @@
 }
 .contact-modal-close:hover {
     background: var(--color-accent, #9B8060);
-    color: var(--color-text-inverse, #F5F2ED);
+    color: var(--color-text-inverse, #F5F5F5);
     border-color: var(--color-accent, #9B8060);
     transform: rotate(90deg);
 }
@@ -87,7 +87,7 @@
 }
 .contact-modal-eyebrow {
     display: block;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.18em;
@@ -96,15 +96,15 @@
     margin-bottom: 0.5rem;
 }
 .contact-modal-header h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.85rem;
     font-weight: 400;
-    color: var(--color-primary, #1C1C1E);
+    color: var(--color-primary, #111111);
     margin: 0 0 0.5rem;
     line-height: 1.2;
 }
 .contact-modal-header p {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.92rem;
     font-weight: 300;
     color: #6b6b6b;
@@ -156,11 +156,11 @@
 .contact-modal-form label {
     display: block;
     margin-bottom: 0.4rem;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 0.85rem;
     letter-spacing: 0.02em;
-    color: var(--color-primary, #1C1C1E);
+    color: var(--color-primary, #111111);
 }
 .contact-modal-form label .required {
     color: var(--color-accent, #9B8060);
@@ -175,10 +175,10 @@
     padding: 0.75rem 1rem;
     border: 1px solid rgba(155, 128, 96, 0.25);
     border-radius: 10px;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.92rem;
     font-weight: 300;
-    color: var(--color-primary, #1C1C1E);
+    color: var(--color-primary, #111111);
     background: rgba(255, 255, 255, 0.6);
     transition: all 0.2s ease;
     -webkit-appearance: none;
@@ -229,11 +229,11 @@
     width: 100%;
     padding: 0.9rem 2rem;
     margin-top: 0.25rem;
-    background: var(--color-primary, #1C1C1E);
-    color: var(--color-text-inverse, #F5F2ED);
+    background: var(--color-primary, #111111);
+    color: var(--color-text-inverse, #F5F5F5);
     border: none;
-    border-radius: 10px;
-    font-family: 'Jost', sans-serif;
+    border-radius: 9999px;
+    font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 400;
     letter-spacing: 0.06em;
@@ -262,7 +262,7 @@
 
 /* ─── Privacy Note ─── */
 .contact-modal-privacy {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.78rem;
     font-weight: 300;
     color: #999;
@@ -283,7 +283,7 @@
     padding: 0.85rem 1rem;
     border-radius: 10px;
     text-align: center;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.88rem;
     font-weight: 400;
 }

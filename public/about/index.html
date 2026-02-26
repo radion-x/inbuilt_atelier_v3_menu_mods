@@ -13,21 +13,21 @@
     <meta property="og:site_name" content="Inbuilt Atelier">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css?v=16">
-    <link rel="stylesheet" href="/css/mobile.css?v=16">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css?v=17">
+    <link rel="stylesheet" href="/css/mobile.css?v=17">
     <link rel="stylesheet" href="/css/contactModal.css">
     <style>
-        .nav-wordmark{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.35rem;letter-spacing:.18em;text-transform:uppercase;color:var(--color-primary);text-decoration:none;line-height:1}
-        .nav-wordmark span{display:block;font-size:.5rem;letter-spacing:.35em;color:var(--color-accent);font-weight:500;font-family:'Jost',sans-serif;margin-top:3px}
+        .nav-wordmark{font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary);text-decoration:none;line-height:1}
+        .nav-wordmark span{display:block;font-size:.5rem;letter-spacing:.35em;color:var(--color-accent);font-weight:500;font-family:'Inter',sans-serif;margin-top:3px}
         header .nav-wordmark{color:var(--color-text-inverse)}
         header .nav-wordmark span{color:var(--color-copper)}
         .nav-logo { height: 52px; width: auto; display: block; }
         .nav-wordmark { display: flex; align-items: center; gap: 0.6rem; }
-        .ia-eyebrow{display:inline-flex;align-items:center;gap:.75rem;font-family:'Jost',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-accent);margin-bottom:1.25rem}
+        .ia-eyebrow{display:inline-flex;align-items:center;gap:.75rem;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-accent);margin-bottom:1.25rem}
         .ia-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--color-accent)}
-        .ia-btn-primary{display:inline-flex;align-items:center;gap:.6rem;padding:.875rem 2rem;background:var(--color-accent);color:#fff;font-family:'Jost',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:background .3s,transform .2s}
-        .ia-btn-primary:hover{background:var(--color-accent-hover);transform:translateY(-1px)}
+        .ia-btn-primary{display:inline-flex;align-items:center;gap:.6rem;padding:.875rem 2rem;background:var(--color-primary);color:#fff;font-family:'Inter',sans-serif;font-size:.85rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:none;border-radius:9999px;cursor:pointer;transition:background .3s,transform .2s}
+        .ia-btn-primary:hover{background:var(--color-primary-light);transform:translateY(-1px)}
         .ia-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--border-light);border:1px solid var(--border-light)}
         .ia-card{background:#fff;padding:2.5rem;transition:background .3s}
         .ia-card:hover{background:var(--color-bg-body)}
@@ -35,7 +35,7 @@
 </head>
 <body>
 <header><nav><div class="container nav-container">
-  <div class="nav-left"><a href="/" class="nav-wordmark"><img src="/images/logo_inbuilt_atelier.png" alt="Inbuilt Atelier" class="nav-logo"></a></div>
+  <div class="nav-left"><a href="/" class="nav-wordmark"><img src="/images/inbuilt_a.png" alt="Inbuilt Atelier" class="nav-logo"></a></div>
   <div class="nav-center"><ul class="nav-links">
     <li><a href="/">Home</a></li>
     <li><a href="/about/" class="active">About</a></li>
@@ -72,23 +72,23 @@
 
 <!-- Page Hero -->
 <section style="position:relative;min-height:60vh;background:var(--color-primary);display:flex;align-items:center;padding:8rem 0 5rem;overflow:hidden;">
-  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(28,28,30,.82) 0%,rgba(28,28,30,.88) 100%),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80&fit=crop&auto=format');background-size:cover;background-position:center 40%;pointer-events:none;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(17,17,17,.82) 0%,rgba(17,17,17,.88) 100%),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80&fit=crop&auto=format');background-size:cover;background-position:center 40%;pointer-events:none;"></div>
   <div class="container" style="position:relative;z-index:2;">
     <nav aria-label="breadcrumb" style="margin-bottom:2rem;">
       <ol class="breadcrumb">
-        <li><a href="/" style="color:rgba(245,242,237,.45);">Home</a></li>
-        <li style="color:rgba(245,242,237,.45);">&middot;</li>
+        <li><a href="/" style="color:rgba(245,245,245,.45);">Home</a></li>
+        <li style="color:rgba(245,245,245,.45);">&middot;</li>
         <li style="color:var(--color-copper);">About</li>
       </ol>
     </nav>
     <div style="max-width:680px;">
-      <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Jost',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-copper);margin-bottom:1.5rem;">
+      <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-copper);margin-bottom:1.5rem;">
         <span style="display:block;width:28px;height:1px;background:var(--color-copper);"></span>Our Story
       </div>
-      <h1 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(3rem,6vw,5rem);line-height:1.05;color:var(--color-text-inverse);margin-bottom:1.5rem;letter-spacing:.02em;">
+      <h1 style="font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:clamp(3rem,6vw,5rem);line-height:1.05;color:var(--color-text-inverse);margin-bottom:1.5rem;letter-spacing:-0.02em;">
         A Studio Built on<br><em style="font-style:italic;color:var(--color-copper);">Craft &amp; Conviction</em>
       </h1>
-      <p style="font-family:'Jost',sans-serif;font-size:1rem;font-weight:300;line-height:1.85;color:rgba(245,242,237,.65);max-width:560px;">
+      <p style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:300;line-height:1.85;color:rgba(245,245,245,.65);max-width:560px;">
         Inbuilt Atelier was founded on a simple belief: that fitted joinery should be designed with the same rigour as architecture, and built with the same care as fine furniture.
       </p>
     </div>
@@ -101,16 +101,16 @@
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">
       <div>
         <div class="ia-eyebrow">The Atelier</div>
-        <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(2.2rem,4vw,3.25rem);line-height:1.1;color:var(--color-primary);margin-bottom:1.75rem;">
+        <h2 style="font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:clamp(2.2rem,4vw,3.25rem);line-height:1.1;color:var(--color-primary);margin-bottom:1.75rem;">
           Designed in Double Bay.<br>Built to Last a Lifetime.
         </h2>
-        <p style="font-family:'Jost',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:1.25rem;">
+        <p style="font-family:'Inter',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:1.25rem;">
           The word <em>atelier</em> describes a workshop where skilled craftspeople produce work of exceptional quality &mdash; where design rigour and material knowledge combine into something lasting. That is the standard we hold ourselves to at Inbuilt Atelier.
         </p>
-        <p style="font-family:'Jost',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:1.25rem;">
+        <p style="font-family:'Inter',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:1.25rem;">
           We design and build bespoke built-in wardrobes, walk-in wardrobes, and custom joinery for Sydney homes that demand more than a catalogue solution. Every piece begins with a conversation and ends with joinery that feels as though it has always been part of the architecture.
         </p>
-        <p style="font-family:'Jost',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);">
+        <p style="font-family:'Inter',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);">
           Our studio is in Double Bay. We draw on European manufacturing traditions and source hardware from the same suppliers that produce joinery for luxury residential projects across the continent.
         </p>
       </div>
@@ -130,41 +130,41 @@
   <div class="container">
     <div style="text-align:center;margin-bottom:4.5rem;">
       <div class="ia-eyebrow" style="justify-content:center;">What We Stand For</div>
-      <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(2.2rem,4vw,3.5rem);color:var(--color-primary);margin-bottom:1rem;">Our Guiding Principles</h2>
-      <p style="font-family:'Jost',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);max-width:540px;margin:0 auto;">
+      <h2 style="font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:clamp(2.2rem,4vw,3.5rem);color:var(--color-primary);margin-bottom:1rem;">Our Guiding Principles</h2>
+      <p style="font-family:'Inter',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);max-width:540px;margin:0 auto;">
         These are not aspirations. They are the commitments that shape every decision we make &mdash; from how we design to how we install.
       </p>
     </div>
     <div class="ia-card-grid">
       <div class="ia-card">
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.5rem;font-weight:300;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">I</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:.04em;">Bespoke, Always</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">We do not offer pre-configured systems or catalogue wardrobes. Everything is drawn, specified, and built for your space and no other. That is what bespoke means &mdash; and it is the only way we work.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">I</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:0em;">Bespoke, Always</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">We do not offer pre-configured systems or catalogue wardrobes. Everything is drawn, specified, and built for your space and no other. That is what bespoke means &mdash; and it is the only way we work.</p>
       </div>
       <div class="ia-card">
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.5rem;font-weight:300;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">II</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:.04em;">Material Integrity</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">We specify materials that perform well over time &mdash; panels that resist humidity, hardware that operates without force for decades, and finishes that age gracefully. We will not compromise this for cost.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">II</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:0em;">Material Integrity</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">We specify materials that perform well over time &mdash; panels that resist humidity, hardware that operates without force for decades, and finishes that age gracefully. We will not compromise this for cost.</p>
       </div>
       <div class="ia-card">
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.5rem;font-weight:300;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">III</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:.04em;">Transparent Process</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">You will always know exactly where your project stands. We share drawings, samples, and schedules at every stage so there are no surprises. Our fixed-price quotes mean what they say.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">III</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:0em;">Transparent Process</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">You will always know exactly where your project stands. We share drawings, samples, and schedules at every stage so there are no surprises. Our fixed-price quotes mean what they say.</p>
       </div>
       <div class="ia-card">
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.5rem;font-weight:300;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">IV</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:.04em;">Considered Installation</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">Our own team installs every project &mdash; methodically, protectively, and to the same standard we hold the workshop to. We leave your home better than we found it.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">IV</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:0em;">Considered Installation</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">Our own team installs every project &mdash; methodically, protectively, and to the same standard we hold the workshop to. We leave your home better than we found it.</p>
       </div>
       <div class="ia-card">
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.5rem;font-weight:300;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">V</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:.04em;">Long-Term Thinking</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">We design joinery for the life of the building, not the life of a trend. Good joinery should still look right in thirty years.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">V</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:0em;">Long-Term Thinking</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">We design joinery for the life of the building, not the life of a trend. Good joinery should still look right in thirty years.</p>
       </div>
       <div class="ia-card">
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.5rem;font-weight:300;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">VI</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:.04em;">Relationships, Not Transactions</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">Most of our clients come back. Our reputation is built on doing what we say, treating your home with respect, and delivering work that prompts a referral rather than a complaint.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);opacity:.4;line-height:1;margin-bottom:1rem;">VI</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-primary);margin-bottom:.75rem;letter-spacing:0em;">Relationships, Not Transactions</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">Most of our clients come back. Our reputation is built on doing what we say, treating your home with respect, and delivering work that prompts a referral rather than a complaint.</p>
       </div>
     </div>
   </div>
@@ -174,31 +174,31 @@
 <section style="padding:7rem 0;background:var(--color-primary);">
   <div class="container">
     <div style="text-align:center;margin-bottom:4.5rem;">
-      <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Jost',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-copper);margin-bottom:1.25rem;">
+      <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-copper);margin-bottom:1.25rem;">
         <span style="display:block;width:28px;height:1px;background:var(--color-copper);"></span>Our Process
       </div>
-      <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(2.2rem,4vw,3.5rem);color:var(--color-text-inverse);margin-bottom:1rem;">How a Commission Unfolds</h2>
+      <h2 style="font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:clamp(2.2rem,4vw,3.5rem);color:var(--color-text-inverse);margin-bottom:1rem;">How a Commission Unfolds</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:3rem;">
       <div>
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:4rem;font-weight:300;color:var(--color-accent);opacity:.3;line-height:1;margin-bottom:1rem;">01</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-text-inverse);margin-bottom:.75rem;">Initial Consultation</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:rgba(245,242,237,.5);">We meet at our showroom or at your home. We assess the space, listen to your brief, and establish a scope &mdash; at no cost and with no obligation.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:4rem;font-weight:500;color:var(--color-accent);opacity:.3;line-height:1;margin-bottom:1rem;">01</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-text-inverse);margin-bottom:.75rem;">Initial Consultation</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:rgba(245,245,245,.5);">We meet at our showroom or at your home. We assess the space, listen to your brief, and establish a scope &mdash; at no cost and with no obligation.</p>
       </div>
       <div>
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:4rem;font-weight:300;color:var(--color-accent);opacity:.3;line-height:1;margin-bottom:1rem;">02</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-text-inverse);margin-bottom:.75rem;">Design &amp; Proposal</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:rgba(245,242,237,.5);">We produce detailed drawings and a fixed-price proposal. Materials, finishes, and hardware are all specified. You review, refine, and approve.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:4rem;font-weight:500;color:var(--color-accent);opacity:.3;line-height:1;margin-bottom:1rem;">02</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-text-inverse);margin-bottom:.75rem;">Design &amp; Proposal</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:rgba(245,245,245,.5);">We produce detailed drawings and a fixed-price proposal. Materials, finishes, and hardware are all specified. You review, refine, and approve.</p>
       </div>
       <div>
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:4rem;font-weight:300;color:var(--color-accent);opacity:.3;line-height:1;margin-bottom:1rem;">03</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-text-inverse);margin-bottom:.75rem;">Workshop Fabrication</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:rgba(245,242,237,.5);">Your approved design goes into production. Precision-cut panels, fitted hardware, quality-checked finishes. We keep you updated throughout.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:4rem;font-weight:500;color:var(--color-accent);opacity:.3;line-height:1;margin-bottom:1rem;">03</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-text-inverse);margin-bottom:.75rem;">Workshop Fabrication</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:rgba(245,245,245,.5);">Your approved design goes into production. Precision-cut panels, fitted hardware, quality-checked finishes. We keep you updated throughout.</p>
       </div>
       <div>
-        <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:4rem;font-weight:300;color:var(--color-accent);opacity:.3;line-height:1;margin-bottom:1rem;">04</div>
-        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.4rem;color:var(--color-text-inverse);margin-bottom:.75rem;">Installation &amp; Handover</h3>
-        <p style="font-family:'Jost',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:rgba(245,242,237,.5);">Our own team fits your joinery to a confirmed schedule. We protect your surfaces, work cleanly, and walk you through everything at handover.</p>
+        <div style="font-family:'DM Sans','Inter',sans-serif;font-size:4rem;font-weight:500;color:var(--color-accent);opacity:.3;line-height:1;margin-bottom:1rem;">04</div>
+        <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:500;font-size:1.4rem;color:var(--color-text-inverse);margin-bottom:.75rem;">Installation &amp; Handover</h3>
+        <p style="font-family:'Inter',sans-serif;font-size:.9rem;font-weight:300;line-height:1.8;color:rgba(245,245,245,.5);">Our own team fits your joinery to a confirmed schedule. We protect your surfaces, work cleanly, and walk you through everything at handover.</p>
       </div>
     </div>
   </div>
@@ -210,9 +210,9 @@
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
       <div>
         <div class="ia-eyebrow">Visit Us</div>
-        <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(2rem,4vw,3.25rem);line-height:1.1;color:var(--color-primary);margin-bottom:1.5rem;">Come and See the Work in Person</h2>
-        <p style="font-family:'Jost',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:1.25rem;">Our Double Bay studio is open by appointment. Visit to handle the materials, see the hardware in action, and meet the team who will manage your project from first conversation to final installation.</p>
-        <p style="font-family:'Jost',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:2rem;">We have no sales team. Your visit will be with a designer who will listen first and propose second.</p>
+        <h2 style="font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:clamp(2rem,4vw,3.25rem);line-height:1.1;color:var(--color-primary);margin-bottom:1.5rem;">Come and See the Work in Person</h2>
+        <p style="font-family:'Inter',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:1.25rem;">Our Double Bay studio is open by appointment. Visit to handle the materials, see the hardware in action, and meet the team who will manage your project from first conversation to final installation.</p>
+        <p style="font-family:'Inter',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:2rem;">We have no sales team. Your visit will be with a designer who will listen first and propose second.</p>
         <a href="/contact/" class="ia-btn-primary">Book a Showroom Visit
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
@@ -221,22 +221,22 @@
         <div style="display:flex;gap:1.25rem;align-items:flex-start;padding:1.5rem;border:1px solid var(--border-light);">
           <svg style="flex-shrink:0;margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           <div>
-            <p style="font-family:'Jost',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.35rem;">Address</p>
-            <p style="font-family:'Jost',sans-serif;font-size:.92rem;font-weight:300;color:var(--color-text-secondary);margin:0;line-height:1.6;">Studio 7, 369&ndash;371 New South Head Road<br>Double Bay NSW 2029</p>
+            <p style="font-family:'Inter',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.35rem;">Address</p>
+            <p style="font-family:'Inter',sans-serif;font-size:.92rem;font-weight:300;color:var(--color-text-secondary);margin:0;line-height:1.6;">Studio 7, 369&ndash;371 New South Head Road<br>Double Bay NSW 2029</p>
           </div>
         </div>
         <div style="display:flex;gap:1.25rem;align-items:center;padding:1.5rem;border:1px solid var(--border-light);">
           <svg style="flex-shrink:0;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
           <div>
-            <p style="font-family:'Jost',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.35rem;">Phone</p>
-            <a href="tel:+61417431124" style="font-family:'Jost',sans-serif;font-size:.92rem;font-weight:300;color:var(--color-text-secondary);text-decoration:none;">0417 431 124</a>
+            <p style="font-family:'Inter',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.35rem;">Phone</p>
+            <a href="tel:+61417431124" style="font-family:'Inter',sans-serif;font-size:.92rem;font-weight:300;color:var(--color-text-secondary);text-decoration:none;">0417 431 124</a>
           </div>
         </div>
         <div style="display:flex;gap:1.25rem;align-items:center;padding:1.5rem;border:1px solid var(--border-light);">
           <svg style="flex-shrink:0;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
           <div>
-            <p style="font-family:'Jost',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.35rem;">Hours</p>
-            <p style="font-family:'Jost',sans-serif;font-size:.92rem;font-weight:300;color:var(--color-text-secondary);margin:0;line-height:1.6;">Mon&ndash;Fri: 9:00 AM &ndash; 5:00 PM<br>Saturday: 10:00 AM &ndash; 2:00 PM</p>
+            <p style="font-family:'Inter',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--color-primary);margin-bottom:.35rem;">Hours</p>
+            <p style="font-family:'Inter',sans-serif;font-size:.92rem;font-weight:300;color:var(--color-text-secondary);margin:0;line-height:1.6;">Mon&ndash;Fri: 9:00 AM &ndash; 5:00 PM<br>Saturday: 10:00 AM &ndash; 2:00 PM</p>
           </div>
         </div>
       </div>
@@ -249,9 +249,7 @@
   <div class="container">
     <div class="ia-ft-rule"></div>
     <div class="ia-ft-brand">
-      <img src="/images/logo_inbuilt_atelier.png" alt="Inbuilt Atelier" class="ia-ft-logo">
-      <span class="ia-ft-wordmark">Inbuilt Atelier</span>
-      <span class="ia-ft-tagline">Bespoke Joinery &amp; Wardrobes &middot; Double Bay</span>
+      <img src="/images/inbuilt_white.png" alt="Inbuilt Atelier" class="ia-ft-logo">
     </div>
     <nav class="ia-ft-nav">
       <a href="/service/ai-assistants/">Built-In Wardrobes</a>
