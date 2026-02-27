@@ -96,7 +96,7 @@ class ContactModal {
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                                 </button>
 
-                                <p class="contact-modal-privacy">By submitting, you agree to our <a href="/privacy-policy-2/">privacy policy</a>. We'll respond within one business day.</p>
+                                <p class="contact-modal-privacy">By submitting, you agree to our <a href="/privacy-policy/">privacy policy</a>. We'll respond within one business day.</p>
 
                                 <div id="modalFormMessage" class="form-status" style="display: none;"></div>
                             </form>
