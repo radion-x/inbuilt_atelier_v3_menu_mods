@@ -1,0 +1,382 @@
+--- a/public/index.html
++++ b/public/index.html
+@@ -3,16 +3,16 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <meta name="description" content="Premium handyman services in Brisbane. Quality home repairs, maintenance, and renovations. Licensed, insured, and trusted by homeowners across the city.">
+-    <meta name="keywords" content="handyman brisbane, home repairs, maintenance services, renovation, licensed handyman, carpentry, plumbing repairs, painting">
++    <meta name="description" content="Premium handyman services in Brisbane. Flatpacks, TV mounting, plaster patching, minor painting touch-ups, gutter cleaning, pressure washing, deck oiling and more. Professional, insured, and detail-focused.">
++    <meta name="keywords" content="handyman brisbane, flatpack assembly, tv mounting, plaster patching, minor painting, gutter cleaning, pressure washing, deck oiling, curtain installation, blind installation, door lock replacement, tap washer, showerhead replacement, shelving installation">
+     <meta name="author" content="River City Handyman">
+     <meta name="robots" content="index, follow">
+     <link rel="canonical" href="https://rivercityhandyman.com.au/">
+-    <title>River City Handyman | Premium Home Repairs & Maintenance Brisbane</title>
++    <title>River City Handyman | Premium Handyman Services Brisbane</title>
+ 
+     <!-- Open Graph Meta Tags -->
+     <meta property="og:title" content="River City Handyman | Expert Home Services Brisbane">
+-    <meta property="og:description" content="Professional handyman services for Brisbane homes. Quality repairs, maintenance, and renovations. Licensed, insured, and reliable.">
++    <meta property="og:description" content="Professional handyman services across Brisbane — flatpacks, TV mounting, curtains/blinds, plaster patching, paint touch-ups, gutter cleaning, pressure washing and deck oiling.">
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://rivercityhandyman.com.au/">
+     <meta property="og:site_name" content="River City Handyman">
+@@ -21,7 +21,7 @@
+     <!-- Twitter Card Meta Tags -->
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:title" content="River City Handyman | Home Repairs Brisbane">
+-    <meta name="twitter:description" content="Premium handyman services. Licensed, insured, and trusted across Brisbane.">
++    <meta name="twitter:description" content="Premium handyman services across Brisbane — flatpacks, TV mounting, plaster patching, paint touch-ups, gutter cleaning, pressure washing and deck oiling.">
+ 
+     <!-- Favicons -->
+     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+@@ -42,7 +42,7 @@
+         "@context": "https://schema.org",
+         "@type": "LocalBusiness",
+         "name": "River City Handyman",
+-        "description": "Premium handyman services in Brisbane. Quality home repairs, maintenance, and renovations.",
++        "description": "Premium handyman services in Brisbane. Flatpacks, TV mounting, plaster patching, minor painting touch-ups, gutter cleaning, pressure washing, deck oiling and more.",
+         "telephone": "+61289588545",
+         "priceRange": "$$",
+         "address": {
+@@ -120,8 +120,8 @@
+         <div class="container">
+             <div class="hero-content">
+                 <div class="hero-badge-top">Brisbane's Trusted Handyman</div>
+-                <h1>Quality Craftsmanship.<br>Honest Service.</h1>
+-                <p class="hero-subtitle">Professional home repairs, maintenance, and renovations across Brisbane. Licensed, insured, and committed to excellence in every job—big or small.</p>
++                <h1>Quality Work.<br>Done Properly.</h1>
++                <p class="hero-subtitle">Professional handyman services across Brisbane — flatpack furniture assembly, TV mounting, curtains and blinds, plaster patching, paint touch-ups, gutter cleaning, pressure washing and deck oiling. Insured, punctual, and meticulous on every job.</p>
+                 <div class="hero-buttons">
+                     <a href="#contact" class="btn btn-primary">
+                         <span>Get a Free Quote</span>
+@@ -141,7 +141,7 @@
+                     <svg style="display: inline; width: 18px; height: 18px; vertical-align: middle; margin-right: 8px;" viewBox="0 0 24 24" fill="currentColor">
+                         <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
+                     </svg>
+-                    Licensed & Insured • Same-Day Service Available • 100% Satisfaction Guaranteed
++                    Insured • Fast Turnarounds • Respectful, Tidy Work
+                 </p>
+             </div>
+         </div>
+@@ -151,8 +151,8 @@
+     <section id="services" class="section" style="padding: 5rem 0; background: var(--color-bg-surface);">
+         <div class="container">
+             <div class="section-header" style="text-align: center; margin-bottom: 3.5rem;">
+-                <h2>Comprehensive Home Services</h2>
+-                <p style="font-size: 1.125rem; color: var(--text-secondary); max-width: 700px; margin: 1rem auto 0;">From small repairs to complete renovations, we handle it all with precision and care. No job too big or small.</p>
++                <h2>Handyman Services That Keep Your Home Running Smoothly</h2>
++                <p style="font-size: 1.125rem; color: var(--text-secondary); max-width: 700px; margin: 1rem auto 0;">From quick installs to the everyday fixes that nag at you, we deliver neat workmanship, clear communication, and a clean finish — every time.</p>
+             </div>
+             
+             <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+@@ -163,26 +163,26 @@
+                             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                         </svg>
+                     </div>
+-                    <h3>General Repairs</h3>
+-                    <p>Door hinges, squeaky floors, broken fixtures—we fix the little things that make a big difference to your home comfort.</p>
++                    <h3>General Repairs & Hardware</h3>
++                    <p>Fix sticky doors, replace door handles or locks, and tidy up trims — the small repairs that make your home feel right again.</p>
+                     <ul class="service-features">
+                         <li>
+                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                 <polyline points="20 6 9 17 4 12"></polyline>
+                             </svg>
+-                            Door & window repairs
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Floor & stair fixes
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Fixture installation
++                            Sticky door adjustments
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            Door handles & lock replacements
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            Window trim repairs
+                         </li>
+                     </ul>
+                 </div>
+@@ -196,26 +196,26 @@
+                             <path d="M9 21V9"></path>
+                         </svg>
+                     </div>
+-                    <h3>Carpentry & Joinery</h3>
+-                    <p>Custom shelving, deck repairs, cabinet installation, and timber work. Quality craftsmanship that lasts.</p>
++                    <h3>Shelving, Skirting & Window Finishing</h3>
++                    <p>Neat, level installs for shelving and skirting boards, plus repairs to window trims — finished properly so it looks like it was always there.</p>
+                     <ul class="service-features">
+                         <li>
+                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                 <polyline points="20 6 9 17 4 12"></polyline>
+                             </svg>
+-                            Custom shelving & storage
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Deck repairs & builds
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Cabinet installation
++                            Shelving installation
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            Skirting boards & finishing
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            Curtains &amp; blinds installation
+                         </li>
+                     </ul>
+                 </div>
+@@ -228,14 +228,14 @@
+                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                         </svg>
+                     </div>
+-                    <h3>Home Maintenance</h3>
+-                    <p>Gutter cleaning, pressure washing, garden shed assembly—keep your property in top condition year-round.</p>
++                    <h3>Outdoor Cleaning & Deck Care</h3>
++                    <p>Keep the exterior looking sharp — clear gutters, pressure wash hard surfaces, and refresh timber with deck oiling or staining.</p>
+                     <ul class="service-features">
+                         <li>
+                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                 <polyline points="20 6 9 17 4 12"></polyline>
+                             </svg>
+-                            Gutter cleaning & repairs
++                            Gutter cleaning
+                         </li>
+                         <li>
+                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+@@ -247,7 +247,7 @@
+                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                 <polyline points="20 6 9 17 4 12"></polyline>
+                             </svg>
+-                            Shed & furniture assembly
++                            Deck oiling & staining
+                         </li>
+                     </ul>
+                 </div>
+@@ -260,26 +260,26 @@
+                             <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                         </svg>
+                     </div>
+-                    <h3>Plumbing Basics</h3>
+-                    <p>Leaky faucets, toilet repairs, pipe insulation. We handle the straightforward plumbing jobs licensed handymen can do.</p>
++                    <h3>Taps & Shower Quick Fixes</h3>
++                    <p>Straightforward plumbing help for common annoyances — replace a tap washer, swap showerheads, or update taps with a clean finish.</p>
+                     <ul class="service-features">
+                         <li>
+                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                 <polyline points="20 6 9 17 4 12"></polyline>
+                             </svg>
+-                            Faucet repairs & replacement
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Toilet repairs & seals
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Pipe insulation
++                            Tap washer replacement
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            Showerhead swaps
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            Tap replacements
+                         </li>
+                     </ul>
+                 </div>
+@@ -293,26 +293,26 @@
+                             <path d="M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"></path>
+                         </svg>
+                     </div>
+-                    <h3>Painting & Finishing</h3>
+-                    <p>Interior and exterior painting, drywall repairs, plastering, and professional finishing touches for any room.</p>
++                    <h3>Plaster Patching & Paint Touch-Ups</h3>
++                    <p>Patch holes in drywall, smooth plaster, and blend minor paint touch-ups so the repair disappears into the room.</p>
+                     <ul class="service-features">
+                         <li>
+                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                 <polyline points="20 6 9 17 4 12"></polyline>
+                             </svg>
+-                            Interior & exterior painting
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Drywall repairs
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Plastering & finishing
++                            Drywall hole patching
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            Plastering & smoothing
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            Minor paint touch-ups
+                         </li>
+                     </ul>
+                 </div>
+@@ -324,26 +324,26 @@
+                             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                         </svg>
+                     </div>
+-                    <h3>Property Improvements</h3>
+-                    <p>Fence repairs, retaining walls, outdoor structures—enhancing your property value with quality workmanship.</p>
++                    <h3>Assembly, Mounting & Outdoor Tidy</h3>
++                    <p>Flatpacks assembled properly, TVs mounted safely, mirrors and pictures hung straight — plus building garden sheds, fence and gate repairs, and hedge clipping with minor tree trimming.</p>
+                     <ul class="service-features">
+                         <li>
+                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                 <polyline points="20 6 9 17 4 12"></polyline>
+                             </svg>
+-                            Fence repairs & installation
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Retaining walls
+-                        </li>
+-                        <li>
+-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+-                                <polyline points="20 6 9 17 4 12"></polyline>
+-                            </svg>
+-                            Outdoor structures
++                            Flatpack furniture assembly
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            TV mounting
++                        </li>
++                        <li>
++                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
++                                <polyline points="20 6 9 17 4 12"></polyline>
++                            </svg>
++                            Hanging mirrors & pictures
+                         </li>
+                     </ul>
+                 </div>
+@@ -398,7 +398,7 @@
+         <div class="container">
+             <div class="section-header" style="text-align: center; margin-bottom: 3.5rem;">
+                 <h2>Our Recent Projects</h2>
+-                <p style="font-size: 1.125rem; color: var(--text-secondary); max-width: 700px; margin: 1rem auto 0;">See the quality of our work. Every project, big or small, receives the same attention to detail.</p>
++                <p style="font-size: 1.125rem; color: var(--text-secondary); max-width: 700px; margin: 1rem auto 0;">A snapshot of the finishes we aim for — clean lines, safe installs, and tidy workmanship.</p>
+             </div>
+             
+             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+@@ -413,7 +413,7 @@
+                                     <path d="M9 21V9"></path>
+                                 </svg>
+                             </div>
+-                            <h4 style="color: white; font-size: 1.25rem; font-weight: 600; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">Deck Restoration</h4>
++                            <h4 style="color: white; font-size: 1.25rem; font-weight: 600; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">Deck Oiling & Timber Refresh</h4>
+                         </div>
+                     </div>
+                 </div>
+@@ -425,7 +425,7 @@
+                                     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                 </svg>
+                             </div>
+-                            <h4 style="color: white; font-size: 1.25rem; font-weight: 600; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">Custom Carpentry</h4>
++                            <h4 style="color: white; font-size: 1.25rem; font-weight: 600; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">TV Mounting & Wall Hanging</h4>
+                         </div>
+                     </div>
+                 </div>
+@@ -439,7 +439,7 @@
+                                     <path d="M6 10V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"></path>
+                                 </svg>
+                             </div>
+-                            <h4 style="color: white; font-size: 1.25rem; font-weight: 600; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">Interior Painting</h4>
++                            <h4 style="color: white; font-size: 1.25rem; font-weight: 600; margin: 0; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">Flatpack Assembly & Shelving</h4>
+                         </div>
+                     </div>
+                 </div>
+@@ -495,7 +495,7 @@
+                         <span class="faq-icon">+</span>
+                     </button>
+                     <div class="faq-answer">
+-                        <p>Absolutely! We offer same-day service for urgent repairs. If you have a broken lock, water leak, or damaged door that needs immediate attention, give us a call. We understand that some repairs can't wait.</p>
++                        <p>Yes — for urgent issues like a broken lock, a door that won’t close properly, a leaking tap (tap washer), or gutters that need clearing after heavy rain, call us and we’ll do our best to prioritise you.</p>
+                     </div>
+                 </div>
+ 
+@@ -643,12 +643,12 @@
+                         <label for="service">Service Needed</label>
+                         <select id="service" name="service">
+                             <option value="">Select a service...</option>
+-                            <option value="general-repairs">General Repairs</option>
+-                            <option value="carpentry">Carpentry & Joinery</option>
+-                            <option value="maintenance">Home Maintenance</option>
+-                            <option value="plumbing">Plumbing Basics</option>
+-                            <option value="painting">Painting & Finishing</option>
+-                            <option value="property-improvements">Property Improvements</option>
++                            <option value="general-repairs">General Repairs & Hardware</option>
++                            <option value="carpentry">Shelving, Skirting & Window Finishing</option>
++                            <option value="maintenance">Outdoor Cleaning & Deck Care</option>
++                            <option value="plumbing">Taps & Shower Quick Fixes</option>
++                            <option value="painting">Plaster Patching & Paint Touch-Ups</option>
++                            <option value="property-improvements">Assembly, Mounting & Outdoor Tidy</option>
+                             <option value="other">Other / Not Sure</option>
+                         </select>
+                     </div>
+@@ -692,7 +692,7 @@
+                         <span style="color: var(--color-accent);">River City</span> Handyman
+                     </h3>
+                     <p style="color: rgba(255,255,255,0.8); line-height: 1.7;">
+-                        Brisbane's trusted handyman for quality home repairs, maintenance, and renovations. Licensed, insured, and committed to excellence.
++                        Premium handyman services across Brisbane — flatpacks, mounting, plaster patching, paint touch-ups, outdoor cleaning and deck care. Insured, punctual, and detail-focused.
+                     </p>
+                 </div>
+ 

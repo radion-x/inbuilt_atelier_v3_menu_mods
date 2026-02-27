@@ -1,0 +1,273 @@
+#!/usr/bin/env python3
+"""Write Walk-In Wardrobes service page for Inbuilt Atelier."""
+
+NAV = """\
+<header><nav><div class="container nav-container">
+  <div class="nav-left"><a href="/" class="nav-wordmark">Inbuilt Atelier<span>Double Bay &middot; Sydney</span></a></div>
+  <div class="nav-center"><ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li class="nav-item-dropdown"><a href="/service/" class="active">Services &#9662;</a>
+      <ul class="dropdown-menu">
+        <li><a href="/service/ai-assistants/">Built-In Wardrobes</a></li>
+        <li><a href="/service/website-development/" class="active">Walk-In Wardrobes</a></li>
+        <li><a href="/service/seo-local-seo/">Joinery &amp; Cabinetry</a></li>
+        <li><a href="/service/social-growth/">Vanities</a></li>
+        <li><a href="/service/crm-sales-funnel/">Home Office</a></li>
+        <li><a href="/service/growth-strategy-analytics/">TV Units &amp; Media</a></li>
+      </ul>
+    </li>
+    <li class="nav-item-dropdown"><a href="/industries/">Spaces &#9662;</a>
+      <ul class="dropdown-menu">
+        <li><a href="/industries/healthcare/">New Builds</a></li>
+        <li><a href="/industries/real-estate/">Renovations</a></li>
+        <li><a href="/industries/home-services/">Apartments</a></li>
+        <li><a href="/industries/hospitality/">Prestige Homes</a></li>
+        <li><a href="/industries/professional-services/">Family Homes</a></li>
+        <li><a href="/industries/ecommerce/">Builders &amp; Developers</a></li>
+      </ul>
+    </li>
+    <li><a href="/contact/">Contact</a></li>
+  </ul></div>
+  <div class="nav-right">
+    <div class="nav-cta"><a href="tel:+61417431124" class="btn btn-primary btn-sm">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>0417&nbsp;431&nbsp;124</span>
+    </a></div>
+    <button class="mobile-menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</div></nav></header>"""
+
+FOOTER_CHAT = """\
+<footer style="background:#111112;color:rgba(245,242,237,.65);padding:4rem 0 2rem;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:3rem;margin-bottom:3rem;border-bottom:1px solid rgba(245,242,237,.08);padding-bottom:3rem;">
+      <div>
+        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.5rem;letter-spacing:.18em;text-transform:uppercase;color:var(--color-text-inverse);display:block;margin-bottom:.4rem;">Inbuilt Atelier</span>
+        <span style="font-family:'Jost',sans-serif;font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:var(--color-copper);font-weight:500;">Bespoke Joinery &amp; Wardrobes</span>
+        <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;line-height:1.8;color:rgba(245,242,237,.45);margin-top:1.25rem;">Studio 7, 369&ndash;371 New South Head Road<br>Double Bay NSW 2029</p>
+      </div>
+      <div>
+        <h4 style="font-family:'Jost',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,242,237,.35);margin-bottom:1.25rem;">Services</h4>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="/service/ai-assistants/" style="color:rgba(245,242,237,.55);text-decoration:none;font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;">Built-In Wardrobes</a></li>
+          <li><a href="/service/website-development/" style="color:rgba(245,242,237,.55);text-decoration:none;font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;">Walk-In Wardrobes</a></li>
+          <li><a href="/service/seo-local-seo/" style="color:rgba(245,242,237,.55);text-decoration:none;font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;">Joinery &amp; Cabinetry</a></li>
+          <li><a href="/service/social-growth/" style="color:rgba(245,242,237,.55);text-decoration:none;font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;">Vanities</a></li>
+          <li><a href="/service/crm-sales-funnel/" style="color:rgba(245,242,237,.55);text-decoration:none;font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;">Home Office</a></li>
+          <li><a href="/service/growth-strategy-analytics/" style="color:rgba(245,242,237,.55);text-decoration:none;font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;">TV Units &amp; Media</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-family:'Jost',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(245,242,237,.35);margin-bottom:1.25rem;">Contact</h4>
+        <ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:.75rem;">
+          <li><a href="tel:+61417431124" style="color:rgba(245,242,237,.55);text-decoration:none;font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;">0417 431 124</a></li>
+          <li><a href="mailto:marina@inbuiltatelier.com.au" style="color:rgba(245,242,237,.55);text-decoration:none;font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;">marina@inbuiltatelier.com.au</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+      <p style="font-family:'Jost',sans-serif;font-size:.8rem;font-weight:300;color:rgba(245,242,237,.28);margin:0;">&copy; 2026 Inbuilt Atelier. All rights reserved.</p>
+      <a href="/privacy-policy-2/" style="font-family:'Jost',sans-serif;font-size:.8rem;font-weight:300;color:rgba(245,242,237,.28);text-decoration:none;">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+<div id="aiChatWidget" class="ai-chat-widget">
+  <button id="chatToggle" class="chat-toggle" aria-label="Open chat"><span class="chat-icon"></span></button>
+  <div id="chatWindow" class="chat-window hidden">
+    <div class="chat-header">
+      <h3>Chat with Inbuilt Atelier</h3>
+      <div class="chat-header-actions">
+        <button id="chatEmail" class="chat-email" aria-label="Save chat transcript" title="Save chat transcript">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        </button>
+        <button id="chatReset" class="chat-reset" aria-label="Reset chat">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path></svg>
+        </button>
+        <button id="chatClose" class="chat-close" aria-label="Close chat">&times;</button>
+      </div>
+    </div>
+    <div id="chatMessages" class="chat-messages"></div>
+    <form id="chatForm" class="chat-form">
+      <input type="text" id="chatInput" placeholder="Ask about our wardrobes..." autocomplete="off" required>
+      <button type="submit" aria-label="Send message">Send</button>
+    </form>
+  </div>
+</div>
+<div id="chatNudge" class="chat-nudge-container">
+  <div class="chat-nudge-text">Questions? Ask me!</div>
+  <svg class="chat-nudge-arrow" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M20,20 Q60,20 70,70 L60,60 M70,70 L80,60" /></svg>
+</div>
+<link rel="stylesheet" href="/css/chat-nudge.css">
+<script src="/js/formHandler.js"></script>
+<script src="/js/aiChat.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/contactModal.js"></script>
+<script>document.addEventListener("DOMContentLoaded",()=>{{const a=new AIChat();a.init();}});</script>"""
+
+HTML = f"""\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walk-In Wardrobes Sydney | Luxury Dressing Rooms | Inbuilt Atelier</title>
+    <meta name="description" content="Bespoke walk-in wardrobes and dressing rooms designed for Sydney homes. Island benches, display shelving, full-length mirrors, and integrated lighting. Double Bay studio.">
+    <meta name="keywords" content="walk-in wardrobe sydney, bespoke dressing room, luxury walk-in robe, custom walk in wardrobe double bay">
+    <link rel="canonical" href="https://inbuiltatelier.com.au/service/website-development/">
+    <meta property="og:title" content="Walk-In Wardrobes Sydney | Inbuilt Atelier">
+    <meta property="og:description" content="Bespoke walk-in wardrobes and dressing rooms designed for Sydney homes.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css?v=12">
+    <link rel="stylesheet" href="/css/mobile.css?v=12">
+    <link rel="stylesheet" href="/css/contactModal.css">
+    <style>
+        .nav-wordmark{{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.35rem;letter-spacing:.18em;text-transform:uppercase;color:var(--color-primary);text-decoration:none;line-height:1}}
+        .nav-wordmark span{{display:block;font-size:.5rem;letter-spacing:.35em;color:var(--color-accent);font-weight:500;font-family:'Jost',sans-serif;margin-top:3px}}
+        header .nav-wordmark{{color:var(--color-text-inverse)}}
+        header .nav-wordmark span{{color:var(--color-copper)}}
+        .feature-card{{padding:2rem;border:1px solid var(--border-light);background:#fff;transition:border-color .3s,transform .3s}}
+        .feature-card:hover{{border-color:var(--color-accent);transform:translateY(-3px)}}
+    </style>
+</head>
+<body>
+{NAV}
+
+<!-- Hero -->
+<section style="position:relative;min-height:55vh;background:var(--color-primary);display:flex;align-items:center;padding:8rem 0 5rem;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%,rgba(155,128,96,.12) 0%,transparent 65%);pointer-events:none;"></div>
+  <div class="container" style="position:relative;z-index:2;">
+    <nav aria-label="breadcrumb" style="margin-bottom:2rem;">
+      <ol class="breadcrumb">
+        <li><a href="/" style="color:rgba(245,242,237,.45);">Home</a></li>
+        <li style="color:rgba(245,242,237,.45);">&middot;</li>
+        <li><a href="/service/" style="color:rgba(245,242,237,.45);">Services</a></li>
+        <li style="color:rgba(245,242,237,.45);">&middot;</li>
+        <li style="color:var(--color-copper);">Walk-In Wardrobes</li>
+      </ol>
+    </nav>
+    <div style="max-width:720px;">
+      <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Jost',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-copper);margin-bottom:1.5rem;">
+        <span style="display:block;width:28px;height:1px;background:var(--color-copper);"></span>Dream Dressing Rooms
+      </div>
+      <h1 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(3rem,6vw,5rem);line-height:1.05;color:var(--color-text-inverse);margin-bottom:1.5rem;letter-spacing:.02em;">
+        Walk-In<br><em style="font-style:italic;color:var(--color-copper);">Wardrobes</em>
+      </h1>
+      <p style="font-family:'Jost',sans-serif;font-size:1.05rem;font-weight:300;line-height:1.85;color:rgba(245,242,237,.65);max-width:600px;">
+        A walk-in wardrobe is not just storage &mdash; it is a room in its own right. We design dressing rooms that are as considered and beautiful as the rest of your home.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Intro -->
+<section style="padding:7rem 0;background:var(--color-bg-body);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Jost',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-accent);margin-bottom:1.25rem;">
+          <span style="display:block;width:28px;height:1px;background:var(--color-accent);"></span>A Room to Dress In
+        </div>
+        <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(2.25rem,4vw,3.25rem);line-height:1.1;color:var(--color-primary);margin-bottom:1.5rem;">
+          Your Wardrobe, Elevated to a Sanctuary
+        </h2>
+        <p style="font-family:'Jost',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:1.25rem;">
+          We treat walk-in wardrobes as living spaces. Every material, every proportion, and every detail is chosen to create an environment that feels calm, ordered, and beautifully personal.
+        </p>
+        <p style="font-family:'Jost',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:2rem;">
+          From compact en-suite dressing rooms to grand walk-through robes with island benching and full-length mirrors, we design layouts that suit your wardrobe size, lifestyle, and the architecture of your home.
+        </p>
+        <a href="/contact/" class="btn btn-primary">Book a Consultation</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1.5rem;">
+        <div style="padding:2rem;border:1px solid var(--border-light);background:#fff;">
+          <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.2rem;color:var(--color-primary);margin-bottom:.5rem;">Island Benches &amp; Drawers</h3>
+          <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;color:var(--color-text-secondary);line-height:1.7;">A freestanding island unit with velvet-lined jewellery drawers, fold-out mirror, and marble or stone top transforms your robe into something truly special.</p>
+        </div>
+        <div style="padding:2rem;border:1px solid var(--border-light);background:#fff;">
+          <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.2rem;color:var(--color-primary);margin-bottom:.5rem;">Display &amp; Bag Shelving</h3>
+          <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;color:var(--color-text-secondary);line-height:1.7;">Open shelving with back-lit display niches for handbags, shoes, and accessories &mdash; designed with the depth and spacing your collection requires.</p>
+        </div>
+        <div style="padding:2rem;border:1px solid var(--border-light);background:#fff;">
+          <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.2rem;color:var(--color-primary);margin-bottom:.5rem;">Full-Length Mirrors</h3>
+          <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;color:var(--color-text-secondary);line-height:1.7;">Framed or frameless, fixed panel or hinged triple mirrors &mdash; positioned to maximise light and give you the full picture before you leave.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features grid -->
+<section style="padding:6rem 0;background:#fff;">
+  <div class="container">
+    <div style="text-align:center;max-width:520px;margin:0 auto 4rem;">
+      <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Jost',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-accent);margin-bottom:1rem;">
+        <span style="display:block;width:28px;height:1px;background:var(--color-accent);"></span>Specifications<span style="display:block;width:28px;height:1px;background:var(--color-accent);"></span>
+      </div>
+      <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(2rem,3.5vw,2.75rem);line-height:1.1;color:var(--color-primary);">Everything You Need, Nothing You Don&rsquo;t</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--border-light);">
+      <div class="feature-card">
+        <div style="width:36px;height:1px;background:var(--color-accent);margin-bottom:1.5rem;"></div>
+        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.25rem;color:var(--color-primary);margin-bottom:.65rem;">Double &amp; Triple Hanging</h3>
+        <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">Configurable rails at multiple heights for dresses, suits, folded shirts, and short garments — maximising capacity without clutter.</p>
+      </div>
+      <div class="feature-card">
+        <div style="width:36px;height:1px;background:var(--color-accent);margin-bottom:1.5rem;"></div>
+        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.25rem;color:var(--color-primary);margin-bottom:.65rem;">Shoe Storage Systems</h3>
+        <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">Angled display shelves, pull-out shoe drawers, and enclosed cubbies — built to the exact dimensions of your collection.</p>
+      </div>
+      <div class="feature-card">
+        <div style="width:36px;height:1px;background:var(--color-accent);margin-bottom:1.5rem;"></div>
+        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.25rem;color:var(--color-primary);margin-bottom:.65rem;">Integrated Lighting</h3>
+        <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">LED strip under shelves, puck lights in display niches, and warm-white overhead pendants or downlights wired before install.</p>
+      </div>
+      <div class="feature-card">
+        <div style="width:36px;height:1px;background:var(--color-accent);margin-bottom:1.5rem;"></div>
+        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.25rem;color:var(--color-primary);margin-bottom:.65rem;">Premium Finishes</h3>
+        <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">Matte lacquer, timber veneer, linen-textured board, and brushed brass or matte black hardware — all selected at our showroom with samples.</p>
+      </div>
+      <div class="feature-card">
+        <div style="width:36px;height:1px;background:var(--color-accent);margin-bottom:1.5rem;"></div>
+        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.25rem;color:var(--color-primary);margin-bottom:.65rem;">Pass-Through Designs</h3>
+        <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">Walk-through robes connecting bedroom to ensuite — a design detail that elevates how a home feels and flows.</p>
+      </div>
+      <div class="feature-card">
+        <div style="width:36px;height:1px;background:var(--color-accent);margin-bottom:1.5rem;"></div>
+        <h3 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.25rem;color:var(--color-primary);margin-bottom:.65rem;">10-Year Warranty</h3>
+        <p style="font-family:'Jost',sans-serif;font-size:.88rem;font-weight:300;line-height:1.8;color:var(--color-text-secondary);">Full workmanship warranty and lifetime guarantee on all door hardware and drawer runners from leading European manufacturers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding:6rem 0;background:var(--color-primary);text-align:center;">
+  <div class="container" style="max-width:680px;margin:0 auto;">
+    <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:clamp(2.25rem,4vw,3.25rem);line-height:1.1;color:var(--color-text-inverse);margin-bottom:1.5rem;">
+      Design Your Dressing Room
+    </h2>
+    <p style="font-family:'Jost',sans-serif;font-size:.97rem;font-weight:300;line-height:1.85;color:rgba(245,242,237,.55);margin-bottom:2.5rem;">
+      We begin with a free in-home consultation. Tell us about your space and we will show you what is possible.
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="/contact/" class="btn btn-primary">Book a Consultation</a>
+      <a href="tel:+61417431124" style="display:inline-flex;align-items:center;gap:.5rem;font-family:'Jost',sans-serif;font-size:.88rem;font-weight:400;color:rgba(245,242,237,.65);text-decoration:none;padding:.85rem 1.5rem;border:1px solid rgba(245,242,237,.2);">Call 0417 431 124</a>
+    </div>
+  </div>
+</section>
+
+{FOOTER_CHAT}
+</body>
+</html>
+"""
+
+import os
+base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+target = os.path.join(base, 'public', 'service', 'website-development', 'index.html')
+with open(target, 'w', encoding='utf-8') as f:
+    f.write(HTML)
+print(f"Written: {os.path.getsize(target)} bytes → {target}")
