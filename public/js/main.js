@@ -1,3 +1,19 @@
+/* ── Transparent → Solid header on scroll ── */
+(function() {
+    const header = document.querySelector('header');
+    if (!header) return;
+    const SCROLL_THRESHOLD = 80;
+    const onScroll = () => {
+        if (window.scrollY > SCROLL_THRESHOLD) {
+            header.classList.add('header-solid');
+        } else {
+            header.classList.remove('header-solid');
+        }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // set initial state
+})();
+
 /**
  * Main JavaScript file
  * Handles general website functionality

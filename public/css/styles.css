@@ -330,23 +330,31 @@ p {
 /* Handled by mobile.css */
 header {
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    max-width: 1200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: none;
     z-index: 1000;
-    height: 64px;
+    height: 72px;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.92);
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 3rem;
+    transition: background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    transform: none;
+}
+
+/* Scrolled state: solid white bar */
+header.header-solid {
+    background: rgba(255, 255, 255, 0.97);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    border-radius: var(--radius-full);
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-    padding: 0 2rem;
-    transition: all 0.3s ease;
+    border-bottom-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.04);
 }
 
 /* Header is a flex container; ensure its nav (flex item) stretches full width */
@@ -385,6 +393,15 @@ header > .nav-container {
     display: flex;
     align-items: center;
     grid-column: 1;
+}
+
+/* Logo: white on transparent header, dark on solid */
+.nav-logo {
+    transition: filter 0.35s ease;
+    filter: brightness(0) invert(1);
+}
+.header-solid .nav-logo {
+    filter: none;
 }
 
 /* Default layout used on most pages:
@@ -479,17 +496,28 @@ header > .nav-container {
 }
 
 .nav-links a {
-    font-weight: 500;
-    color: var(--color-text-main);
-    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.82rem;
     text-decoration: none;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease;
-    letter-spacing: 0.01em;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.35s ease, border-color 0.35s ease;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .nav-links a:hover, .nav-links a.active {
+    color: #fff;
+    border-bottom-color: var(--color-copper);
+}
+
+/* Solid header: dark nav text */
+.header-solid .nav-links a {
+    color: var(--color-text-main);
+}
+.header-solid .nav-links a:hover,
+.header-solid .nav-links a.active {
     color: var(--color-primary);
     border-bottom-color: var(--color-accent);
 }
@@ -554,6 +582,17 @@ header > .nav-container {
     border-bottom: none;
 }
 
+/* Dropdown always uses dark text regardless of header state */
+.dropdown-menu a {
+    color: var(--color-text-secondary) !important;
+    text-transform: none !important;
+    letter-spacing: 0.01em !important;
+    font-weight: 400 !important;
+}
+.dropdown-menu a:hover {
+    color: var(--color-primary) !important;
+}
+
 /* CTA Group */
 .nav-cta {
     display: flex;
@@ -582,20 +621,56 @@ header > .nav-container {
 }
 
 .nav-cta .btn {
-    padding: 0.45rem 0.9rem;
-    font-size: 0.95rem;
-    font-weight: 700;
-    background-color: var(--color-primary);
-    color: white;
-    border-radius: 10px;
-    transition: all 0.18s ease;
-    min-width: 0; /* allow content width */
+    padding: 0.5rem 1.25rem;
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 0;
+    transition: color 0.35s ease, border-color 0.35s ease, background 0.35s ease;
+    min-width: 0;
 }
 
 .nav-cta .btn:hover {
-    background-color: #3b4d40;
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.06);
+    transform: none;
+    box-shadow: none;
+}
+
+/* Solid header: dark CTA */
+.header-solid .nav-cta .btn {
+    color: var(--color-text-main);
+    border-color: rgba(0, 0, 0, 0.2);
+}
+.header-solid .nav-cta .btn:hover {
+    color: var(--color-primary);
+    border-color: var(--color-accent);
+    background: rgba(155, 128, 96, 0.04);
+}
+
+/* Hamburger colour matches header state */
+.mobile-menu-toggle span {
+    background: rgba(255, 255, 255, 0.85);
+    transition: background 0.35s ease;
+}
+.header-solid .mobile-menu-toggle span {
+    background: var(--color-text-main);
+}
+
+/* Nav phone: white on transparent, dark on solid */
+.nav-phone {
+    color: rgba(255, 255, 255, 0.85);
+}
+.header-solid .nav-phone {
+    color: var(--color-text-main);
+}
+.header-solid .nav-phone:hover {
+    color: var(--color-primary);
 }
 
 /* 8. HERO SECTIONS */

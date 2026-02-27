@@ -42,7 +42,7 @@
        Award-winning minimalist approach
        ============================================ */
     
-    /* Fixed clean header on mobile */
+    /* Fixed clean header on mobile — transparent by default */
     header {
         position: fixed !important;
         top: 0 !important;
@@ -51,14 +51,31 @@
         width: 100% !important;
         max-width: none !important;
         transform: none !important;
-        background: #ffffff !important;
+        background: transparent !important;
         -webkit-backdrop-filter: none !important;
         backdrop-filter: none !important;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.04) !important;
+        box-shadow: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
         padding: 0.75rem 0 !important;
         border-radius: 0 !important;
         z-index: 1000 !important;
+    }
+
+    /* Mobile: solid header on scroll */
+    header.header-solid {
+        background: rgba(255, 255, 255, 0.97) !important;
+        -webkit-backdrop-filter: blur(16px) !important;
+        backdrop-filter: blur(16px) !important;
+        border-bottom-color: rgba(0, 0, 0, 0.06) !important;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04) !important;
+    }
+
+    /* Mobile: logo white on transparent, dark on solid */
+    .nav-logo {
+        filter: brightness(0) invert(1) !important;
+    }
+    header.header-solid .nav-logo {
+        filter: none !important;
     }
 
     /* Clean flat bar - no pill design */
@@ -262,21 +279,21 @@
         display: none !important;
     }
 
-    /* Premium hamburger menu button */
+    /* Minimal hamburger menu button — no background box */
     .mobile-menu-toggle {
         display: flex !important;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 6px;
-        background: rgba(255, 255, 255, 0.9) !important;
+        background: transparent !important;
         border: none !important;
-        border-radius: 12px !important;
+        border-radius: 0 !important;
         cursor: pointer;
         padding: 12px !important;
         z-index: 1003;
         transition: all 0.3s ease;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        box-shadow: none !important;
         width: 48px;
         height: 48px;
     }
@@ -289,15 +306,25 @@
         display: block;
         width: 22px;
         height: 2px;
-        background: #1a1a2e;
+        background: rgba(255, 255, 255, 0.85);
         border-radius: 2px;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         transform-origin: center;
     }
 
+    /* Solid header: dark hamburger */
+    header.header-solid .mobile-menu-toggle span {
+        background: #1a1a2e;
+    }
+
     .mobile-menu-toggle.active {
         background: transparent !important;
         box-shadow: none;
+    }
+
+    /* Active (X) state: always dark so it's visible over white menu */
+    .mobile-menu-toggle.active span {
+        background: #1a1a2e !important;
     }
 
     .mobile-menu-toggle.active span:nth-child(1) {
