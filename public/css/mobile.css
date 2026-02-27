@@ -1674,24 +1674,45 @@
 
     /* ── Homepage Trust Strip ── */
     .ia-trust {
-        padding: 0.5rem 0 !important;
+        padding: 0 !important;
     }
 
     .ia-trust-inner {
-        flex-direction: column !important;
-        gap: 0 !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        max-width: 100% !important;
     }
 
     .ia-trust-item {
-        border-right: none !important;
-        border-bottom: 1px solid var(--border-light);
-        padding: 0.625rem 1rem !important;
-        justify-content: center;
-        font-size: 0.72rem !important;
+        padding: 1.5rem 1rem !important;
+        gap: 0.5rem !important;
     }
 
-    .ia-trust-item:last-child {
-        border-bottom: none !important;
+    .ia-trust-item:not(:last-child)::after {
+        display: none !important;
+    }
+
+    /* Hairline grid: right on odd, bottom on top row */
+    .ia-trust-item:nth-child(odd) {
+        border-right: 1px solid rgba(155,128,96,0.18);
+    }
+    .ia-trust-item:nth-child(1),
+    .ia-trust-item:nth-child(2) {
+        border-bottom: 1px solid rgba(155,128,96,0.18);
+    }
+
+    .ia-trust-icon {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .ia-trust-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .ia-trust-label {
+        font-size: 0.6rem !important;
+        letter-spacing: 0.13em !important;
     }
 
     /* ── Homepage Section Grids ── */

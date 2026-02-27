@@ -266,35 +266,65 @@
         /* ── Trust strip ── */
         .ia-trust {
             background: #ffffff;
-            border-bottom: 1px solid var(--border-light);
-            padding: 1.25rem 0;
+            border-top: 1px solid rgba(155,128,96,0.15);
+            border-bottom: 1px solid rgba(155,128,96,0.15);
+            padding: 0;
+            position: relative;
+            overflow: hidden;
         }
         .ia-trust-inner {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
             gap: 0;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .ia-trust-item {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem 2rem;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.78rem;
-            font-weight: 500;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--color-text-secondary);
-            border-right: 1px solid var(--border-light);
+            gap: 0.6rem;
+            padding: 2.25rem 1.5rem;
+            position: relative;
+            transition: background 0.4s ease;
         }
-        .ia-trust-item:last-child { border-right: none; }
-        .ia-trust-dot {
-            width: 5px; height: 5px;
-            border-radius: 50%;
-            background: var(--color-accent);
-            flex-shrink: 0;
+        .ia-trust-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 20%;
+            height: 60%;
+            width: 1px;
+            background: linear-gradient(180deg, transparent, rgba(155,128,96,0.25), transparent);
+        }
+        .ia-trust-item:hover {
+            background: rgba(155,128,96,0.04);
+        }
+        .ia-trust-icon {
+            width: 26px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.45;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .ia-trust-item:hover .ia-trust-icon {
+            opacity: 0.85;
+            transform: translateY(-2px);
+        }
+        .ia-trust-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #4a4a4a;
+            text-align: center;
+            transition: color 0.3s ease;
+        }
+        .ia-trust-item:hover .ia-trust-label {
+            color: var(--color-accent);
         }
 
         /* ── Section heading pattern ── */
@@ -590,12 +620,46 @@
 
     <!-- Trust Strip -->
     <div class="ia-trust">
-        <div class="container">
-            <div class="ia-trust-inner">
-                <div class="ia-trust-item"><div class="ia-trust-dot"></div>Double Bay Showroom</div>
-                <div class="ia-trust-item"><div class="ia-trust-dot"></div>European Hardware & Materials</div>
-                <div class="ia-trust-item"><div class="ia-trust-dot"></div>Full Design & Installation</div>
-                <div class="ia-trust-item"><div class="ia-trust-dot"></div>Bespoke to Every Space</div>
+        <div class="ia-trust-inner">
+            <div class="ia-trust-item">
+                <div class="ia-trust-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9B8060" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <span class="ia-trust-label">Double Bay Showroom</span>
+            </div>
+            <div class="ia-trust-item">
+                <div class="ia-trust-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9B8060" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 2a14.5 14.5 0 000 20 14.5 14.5 0 000-20"/>
+                        <path d="M2 12h20"/>
+                    </svg>
+                </div>
+                <span class="ia-trust-label">European Hardware &amp; Materials</span>
+            </div>
+            <div class="ia-trust-item">
+                <div class="ia-trust-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9B8060" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 20h20"/>
+                        <path d="M5 20V8l7-5 7 5v12"/>
+                        <path d="M9 20v-6h6v6"/>
+                        <path d="M9 12h6"/>
+                    </svg>
+                </div>
+                <span class="ia-trust-label">Full Design &amp; Installation</span>
+            </div>
+            <div class="ia-trust-item">
+                <div class="ia-trust-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9B8060" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <span class="ia-trust-label">Bespoke to Every Space</span>
             </div>
         </div>
     </div>
