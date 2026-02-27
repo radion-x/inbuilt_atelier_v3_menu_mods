@@ -1419,7 +1419,7 @@ ul.breadcrumb li a:hover {
 .parallax-banner {
     position: relative;
     min-height: 480px;
-    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80&fit=crop&auto=format');
+    background-image: url('/images/presotto/flagship-showroom-milano-presotto-foto-15.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -3662,6 +3662,331 @@ chat-message.ai p + h4 {
 
 .addons-section {
     padding: 5rem 0;
+}
+
+/* ===================================
+   WARDROBE SHOWCASE — Premium Gallery Components
+   =================================== */
+
+/* --- Masonry-style Image Gallery --- */
+.ia-gallery {
+    display: grid;
+    gap: 4px;
+}
+
+.ia-gallery--hero {
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 320px 320px;
+}
+
+.ia-gallery--hero .ia-gallery-item:first-child {
+    grid-row: 1 / 3;
+}
+
+.ia-gallery--trio {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 420px;
+}
+
+.ia-gallery--duo {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 480px;
+}
+
+.ia-gallery--quad {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 340px 340px;
+}
+
+.ia-gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.ia-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ia-gallery-item:hover img {
+    transform: scale(1.04);
+}
+
+/* Caption overlay */
+.ia-gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 2rem 1.75rem;
+    background: linear-gradient(to top, rgba(17,17,17,0.75) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.ia-gallery-item:hover .ia-gallery-caption {
+    opacity: 1;
+}
+
+.ia-gallery-caption h3 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: #F5F5F5;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.25rem;
+}
+
+.ia-gallery-caption p {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: rgba(245,245,245,0.6);
+    letter-spacing: 0.03em;
+}
+
+/* --- Full-width Showcase Strip --- */
+.ia-showcase-strip {
+    position: relative;
+    overflow: hidden;
+}
+
+.ia-showcase-strip img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ia-showcase-strip-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(160deg, rgba(17,17,17,0.6) 0%, rgba(17,17,17,0.4) 100%);
+}
+
+/* --- Featured Collection Block --- */
+.ia-collection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 600px;
+}
+
+.ia-collection-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.ia-collection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ia-collection:hover .ia-collection-image img {
+    transform: scale(1.03);
+}
+
+.ia-collection-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+
+/* --- Scroll-reveal Image Row --- */
+.ia-imgrow {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 0;
+}
+
+.ia-imgrow::-webkit-scrollbar {
+    display: none;
+}
+
+.ia-imgrow-item {
+    flex: 0 0 33.333%;
+    scroll-snap-align: start;
+    aspect-ratio: 3/4;
+    position: relative;
+    overflow: hidden;
+}
+
+.ia-imgrow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s var(--ease-out);
+}
+
+.ia-imgrow-item:hover img {
+    transform: scale(1.05);
+}
+
+/* --- Service Page Portfolio Grid --- */
+.ia-portfolio {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.ia-portfolio--3col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ia-portfolio--2col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ia-portfolio-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+}
+
+.ia-portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s var(--ease-out), filter 0.5s ease;
+}
+
+.ia-portfolio-item:hover img {
+    transform: scale(1.04);
+}
+
+.ia-portfolio-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 1.5rem 1.25rem;
+    background: linear-gradient(to top, rgba(17,17,17,0.7) 0%, transparent 100%);
+    transform: translateY(100%);
+    transition: transform 0.5s var(--ease-out);
+}
+
+.ia-portfolio-item:hover .ia-portfolio-label {
+    transform: translateY(0);
+}
+
+.ia-portfolio-label span {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(245,245,245,0.85);
+}
+
+/* --- Feature Image + Text Split --- */
+.ia-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 520px;
+}
+
+.ia-split--reverse {
+    direction: rtl;
+}
+
+.ia-split--reverse > * {
+    direction: ltr;
+}
+
+.ia-split-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.ia-split-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ia-split-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 5rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .ia-gallery--hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 280px 200px 200px;
+    }
+    .ia-gallery--hero .ia-gallery-item:first-child {
+        grid-row: auto;
+    }
+    .ia-gallery--trio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 280px 240px 240px;
+    }
+    .ia-gallery--duo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 320px 320px;
+    }
+    .ia-gallery--quad {
+        grid-template-columns: 1fr;
+        grid-template-rows: 260px 260px 260px 260px;
+    }
+    .ia-collection {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    .ia-collection-content {
+        padding: 3rem 1.5rem;
+    }
+    .ia-imgrow-item {
+        flex: 0 0 75%;
+    }
+    .ia-portfolio--3col {
+        grid-template-columns: 1fr;
+    }
+    .ia-portfolio--2col {
+        grid-template-columns: 1fr;
+    }
+    .ia-split {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    .ia-split--reverse {
+        direction: ltr;
+    }
+    .ia-split-image {
+        min-height: 320px;
+    }
+    .ia-split-content {
+        padding: 3rem 1.5rem;
+    }
+    .ia-gallery-caption {
+        opacity: 1;
+    }
+    .ia-portfolio-label {
+        transform: translateY(0);
+    }
 }
 
 

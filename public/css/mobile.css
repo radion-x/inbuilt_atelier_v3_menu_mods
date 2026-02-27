@@ -1949,3 +1949,36 @@
       transform: rotate(90deg);
   }
 }
+
+/* ===== Image gallery & showcase — mobile refinements ===== */
+@media (max-width: 640px) {
+  .ia-gallery--hero,
+  .ia-gallery--trio,
+  .ia-gallery--duo,
+  .ia-gallery--quad {
+    grid-template-columns: 1fr !important;
+    gap: 3px !important;
+  }
+  .ia-gallery-item { min-height: 220px; }
+  .ia-gallery-caption { opacity: 1; }
+  .ia-gallery-caption h3 { font-size: 1rem; }
+  .ia-gallery-caption p { font-size: .75rem; }
+
+  .ia-collection {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+  .ia-collection-content {
+    padding: 3rem 1.5rem !important;
+  }
+  .ia-collection-image { min-height: 320px; }
+
+  .ia-split {
+    grid-template-columns: 1fr !important;
+  }
+  .ia-split--reverse .ia-split-image { order: 0; }
+  .ia-split-image { min-height: 280px; }
+  .ia-split-content { padding: 3rem 1.5rem !important; }
+
+  .ia-imgrow-item { min-width: 85% !important; }
+}

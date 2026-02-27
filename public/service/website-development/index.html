@@ -13,15 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css?v=17">
-    <link rel="stylesheet" href="/css/mobile.css?v=17">
+    <link rel="stylesheet" href="/css/styles.css?v=18">
+    <link rel="stylesheet" href="/css/mobile.css?v=18">
     <link rel="stylesheet" href="/css/contactModal.css">
     <style>
         .nav-wordmark{font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary);text-decoration:none;line-height:1}
         .nav-wordmark span{display:block;font-size:.5rem;letter-spacing:.35em;color:var(--color-accent);font-weight:500;font-family:'Inter',sans-serif;margin-top:3px}
         header .nav-wordmark{color:var(--color-text-inverse)}
         header .nav-wordmark span{color:var(--color-copper)}
-        .nav-logo { height: 52px; width: auto; display: block; }
+        .nav-logo { height: 32px; width: auto; display: block; }
         .nav-wordmark { display: flex; align-items: center; gap: 0.6rem; }
         .feature-card{padding:2rem;border:1px solid var(--border-light);background:#fff;transition:border-color .3s,transform .3s}
         .feature-card:hover{border-color:var(--color-accent);transform:translateY(-3px)}
@@ -29,7 +29,7 @@
 </head>
 <body>
 <header><nav><div class="container nav-container">
-  <div class="nav-left"><a href="/" class="nav-wordmark"><img src="/images/inbuilt_a.png" alt="Inbuilt Atelier" class="nav-logo"></a></div>
+  <div class="nav-left"><a href="/" class="nav-wordmark"><img src="/images/just_inbuilt_black.png" alt="Inbuilt Atelier" class="nav-logo"></a></div>
   <div class="nav-center"><ul class="nav-links">
     <li><a href="/">Home</a></li>
     <li><a href="/about/">About</a></li>
@@ -66,7 +66,7 @@
 
 <!-- Hero -->
 <section style="position:relative;min-height:55vh;background:var(--color-primary);display:flex;align-items:center;padding:8rem 0 5rem;overflow:hidden;">
-  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(17,17,17,.82) 0%,rgba(17,17,17,.88) 100%),url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1920&q=80&fit=crop&auto=format');background-size:cover;background-position:center 45%;pointer-events:none;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(17,17,17,.82) 0%,rgba(17,17,17,.88) 100%),url('/images/presotto/flagship-showroom-milano-presotto-foto-2.jpg');background-size:cover;background-position:center 45%;pointer-events:none;"></div>
   <div class="container" style="position:relative;z-index:2;">
     <nav aria-label="breadcrumb" style="margin-bottom:2rem;">
       <ol class="breadcrumb">
@@ -110,23 +110,77 @@
         </p>
         <a href="/contact/" class="btn btn-primary">Book a Consultation</a>
       </div>
-      <div style="display:flex;flex-direction:column;gap:1.5rem;">
-        <div style="padding:2rem;border:1px solid var(--border-light);background:#fff;">
-          <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:400;font-size:1.2rem;color:var(--color-primary);margin-bottom:.5rem;">Island Benches &amp; Drawers</h3>
-          <p style="font-family:'Inter',sans-serif;font-size:.88rem;font-weight:300;color:var(--color-text-secondary);line-height:1.7;">A freestanding island unit with velvet-lined jewellery drawers, fold-out mirror, and marble or stone top transforms your robe into something truly special.</p>
-        </div>
-        <div style="padding:2rem;border:1px solid var(--border-light);background:#fff;">
-          <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:400;font-size:1.2rem;color:var(--color-primary);margin-bottom:.5rem;">Display &amp; Bag Shelving</h3>
-          <p style="font-family:'Inter',sans-serif;font-size:.88rem;font-weight:300;color:var(--color-text-secondary);line-height:1.7;">Open shelving with back-lit display niches for handbags, shoes, and accessories &mdash; designed with the depth and spacing your collection requires.</p>
-        </div>
-        <div style="padding:2rem;border:1px solid var(--border-light);background:#fff;">
-          <h3 style="font-family:'DM Sans','Inter',sans-serif;font-weight:400;font-size:1.2rem;color:var(--color-primary);margin-bottom:.5rem;">Full-Length Mirrors</h3>
-          <p style="font-family:'Inter',sans-serif;font-size:.88rem;font-weight:300;color:var(--color-text-secondary);line-height:1.7;">Framed or frameless, fixed panel or hinged triple mirrors &mdash; positioned to maximise light and give you the full picture before you leave.</p>
-        </div>
+      <!-- Hero image -->
+      <div style="position:relative;overflow:hidden;aspect-ratio:4/5;">
+        <img src="/images/presotto/wd-Presotto_Night_Sets_Inside-2-2.jpg" alt="Luxury walk-in wardrobe interior with island bench and integrated LED lighting" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
       </div>
     </div>
   </div>
 </section>
+
+<!-- Walk-In Gallery -->
+<section style="padding:0;background:#111111;">
+  <div style="padding:5rem 0 3rem;text-align:center;">
+    <div class="container">
+      <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-copper);margin-bottom:1rem;">
+        <span style="display:block;width:28px;height:1px;background:var(--color-copper);"></span>
+        Inspiration
+        <span style="display:block;width:28px;height:1px;background:var(--color-copper);"></span>
+      </div>
+      <h2 style="font-family:'DM Sans','Inter',sans-serif;font-weight:300;font-size:clamp(2rem,4vw,3.25rem);color:var(--color-text-inverse);margin-bottom:.75rem;">Walk-In Wardrobe Designs</h2>
+      <p style="font-family:'Inter',sans-serif;font-size:.92rem;font-weight:300;color:rgba(245,245,245,.45);max-width:480px;margin:0 auto;line-height:1.8;">From compact dressing alcoves to grand pass-through robes — each layout designed around your wardrobe and your home.</p>
+    </div>
+  </div>
+  <div class="ia-gallery ia-gallery--hero">
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-i-modul-art-1-generale-a-scaled.jpg" alt="Modular wardrobe system with open shelving and display niches" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Open-Shelf Configuration</h3><p>Modular shelving · Display niches</p></div>
+    </div>
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-i-modul-art-esempio-a-1.jpg" alt="Walk-in wardrobe with timber veneer panels and soft lighting" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Timber Veneer Suite</h3><p>Warm palette · Integrated lighting</p></div>
+    </div>
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-i-modul-art-esempio-b-1.jpg" alt="Contemporary dressing room layout with island bench" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Dressing Room</h3><p>Island bench · Full-length mirrors</p></div>
+    </div>
+  </div>
+  <div class="ia-gallery ia-gallery--trio" style="margin-top:4px;">
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-i-modul-art-esempio-c-1.jpg" alt="Walk-in wardrobe interior with pull-out drawers and hanging rails" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Interior Detail</h3><p>Custom drawers · Trouser rails</p></div>
+    </div>
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-i-modul-art-esempio-d-1.jpg" alt="Luxury dressing room with glass-front cabinets" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Glass-Front Display</h3><p>LED-lit shelving · Glass doors</p></div>
+    </div>
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-i-modul-art-esempio-e-1.jpg" alt="Walk-in wardrobe with matte lacquer and brass hardware" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Matte &amp; Brass</h3><p>Lacquer panels · Brushed hardware</p></div>
+    </div>
+  </div>
+  <div style="padding:3rem 0 5rem;text-align:center;">
+    <a href="/contact/" class="ia-btn-primary" style="display:inline-flex;align-items:center;gap:.6rem;">
+      Design Your Dressing Room
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Features split image -->
+<div class="ia-split">
+  <div class="ia-split-image">
+    <img src="/images/presotto/wd-i-modul-art-1-generale-b-scaled.jpg" alt="Walk-in wardrobe configuration with open and closed storage zones" loading="lazy">
+  </div>
+  <div class="ia-split-content">
+    <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-accent);margin-bottom:1.5rem;">
+      <span style="display:block;width:28px;height:1px;background:var(--color-accent);"></span>The Details
+    </div>
+    <h2 style="font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.1;color:var(--color-primary);margin-bottom:1.25rem;">Island Benches, Display Shelving &amp; More</h2>
+    <p style="font-family:'Inter',sans-serif;font-size:.93rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:1.25rem;">A freestanding island unit with velvet-lined jewellery drawers, fold-out mirror, and marble or stone top transforms your robe into something truly special.</p>
+    <p style="font-family:'Inter',sans-serif;font-size:.93rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);">Open shelving with back-lit display niches for handbags, shoes, and accessories &mdash; designed with the depth and spacing your collection requires. Framed or frameless mirrors positioned to maximise light.</p>
+  </div>
+</div>
 
 <!-- Features grid -->
 <section style="padding:6rem 0;background:#fff;">
@@ -172,6 +226,22 @@
   </div>
 </section>
 
+<!-- Horizontal image strip -->
+<div class="ia-imgrow" style="background:#111111;">
+  <div class="ia-imgrow-item">
+    <img src="/images/presotto/wd-i-modul-art-esempio-f-1.jpg" alt="Walk-in wardrobe with integrated vanity zone" loading="lazy">
+  </div>
+  <div class="ia-imgrow-item">
+    <img src="/images/presotto/wd-i-modul-art-esempio-g-1.jpg" alt="Dressing room with full-height hanging and shoe display" loading="lazy">
+  </div>
+  <div class="ia-imgrow-item">
+    <img src="/images/presotto/wd-i-modul-art-esempio-h-1.jpg" alt="Luxury walk-in with timber veneer and brass accents" loading="lazy">
+  </div>
+  <div class="ia-imgrow-item">
+    <img src="/images/presotto/wd-i-modul-art-2-anteprima.jpg" alt="Modular wardrobe open-plan configuration" loading="lazy">
+  </div>
+</div>
+
 <!-- CTA -->
 <section style="padding:6rem 0;background:var(--color-primary);text-align:center;">
   <div class="container" style="max-width:680px;margin:0 auto;">
@@ -192,7 +262,7 @@
   <div class="container">
     <div class="ia-ft-rule"></div>
     <div class="ia-ft-brand">
-      <img src="/images/inbuilt_white.png" alt="Inbuilt Atelier" class="ia-ft-logo">
+      <img src="/images/tex_inbuilt_white.png" alt="Inbuilt Atelier" class="ia-ft-logo">
     </div>
     <nav class="ia-ft-nav">
       <a href="/service/ai-assistants/">Built-In Wardrobes</a>

@@ -14,15 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css?v=17">
-    <link rel="stylesheet" href="/css/mobile.css?v=17">
+    <link rel="stylesheet" href="/css/styles.css?v=18">
+    <link rel="stylesheet" href="/css/mobile.css?v=18">
     <link rel="stylesheet" href="/css/contactModal.css">
     <style>
         .nav-wordmark{font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--color-primary);text-decoration:none;line-height:1}
         .nav-wordmark span{display:block;font-size:.5rem;letter-spacing:.35em;color:var(--color-accent);font-weight:500;font-family:'Inter',sans-serif;margin-top:3px}
         header .nav-wordmark{color:var(--color-text-inverse)}
         header .nav-wordmark span{color:var(--color-copper)}
-        .nav-logo { height: 52px; width: auto; display: block; }
+        .nav-logo { height: 32px; width: auto; display: block; }
         .nav-wordmark { display: flex; align-items: center; gap: 0.6rem; }
         .ia-eyebrow{display:inline-flex;align-items:center;gap:.75rem;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-accent);margin-bottom:1.25rem}
         .ia-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--color-accent)}
@@ -35,7 +35,7 @@
 </head>
 <body>
 <header><nav><div class="container nav-container">
-  <div class="nav-left"><a href="/" class="nav-wordmark"><img src="/images/inbuilt_a.png" alt="Inbuilt Atelier" class="nav-logo"></a></div>
+  <div class="nav-left"><a href="/" class="nav-wordmark"><img src="/images/just_inbuilt_black.png" alt="Inbuilt Atelier" class="nav-logo"></a></div>
   <div class="nav-center"><ul class="nav-links">
     <li><a href="/">Home</a></li>
     <li><a href="/about/">About</a></li>
@@ -72,7 +72,7 @@
 
 <!-- Hero -->
 <section style="position:relative;min-height:55vh;background:var(--color-primary);display:flex;align-items:center;padding:8rem 0 5rem;overflow:hidden;">
-  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(17,17,17,.82) 0%,rgba(17,17,17,.88) 100%),url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80&fit=crop&auto=format');background-size:cover;background-position:center center;pointer-events:none;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(160deg,rgba(17,17,17,.82) 0%,rgba(17,17,17,.88) 100%),url('/images/presotto/flagship-showroom-milano-presotto-foto-14.jpg');background-size:cover;background-position:center center;pointer-events:none;"></div>
   <div class="container" style="position:relative;z-index:2;">
     <nav aria-label="breadcrumb" style="margin-bottom:2rem;">
       <ol class="breadcrumb">
@@ -114,27 +114,80 @@
         </p>
         <a href="/contact/" class="btn btn-primary">Book a Consultation</a>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border-light);">
-        <div style="background:#fff;padding:2rem;text-align:center;">
-          <p style="font-family:'DM Sans','Inter',sans-serif;font-size:2.75rem;font-weight:500;color:var(--color-accent);margin-bottom:.5rem;line-height:1;">12+</p>
-          <p style="font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-secondary);">Years of Craft</p>
-        </div>
-        <div style="background:#fff;padding:2rem;text-align:center;">
-          <p style="font-family:'DM Sans','Inter',sans-serif;font-size:2.75rem;font-weight:500;color:var(--color-accent);margin-bottom:.5rem;line-height:1;">500+</p>
-          <p style="font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-secondary);">Wardrobes Installed</p>
-        </div>
-        <div style="background:#fff;padding:2rem;text-align:center;">
-          <p style="font-family:'DM Sans','Inter',sans-serif;font-size:2.75rem;font-weight:500;color:var(--color-accent);margin-bottom:.5rem;line-height:1;">100%</p>
-          <p style="font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-secondary);">Custom Designed</p>
-        </div>
-        <div style="background:#fff;padding:2rem;text-align:center;">
-          <p style="font-family:'DM Sans','Inter',sans-serif;font-size:2.75rem;font-weight:500;color:var(--color-accent);margin-bottom:.5rem;line-height:1;">10yr</p>
-          <p style="font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--color-text-secondary);">Workmanship Warranty</p>
-        </div>
+      <!-- Hero product image -->
+      <div style="position:relative;overflow:hidden;aspect-ratio:4/5;">
+        <img src="/images/presotto/armadi-anta-battente-liscia-a-scaled.jpg" alt="Full-height built-in wardrobe with matte lacquer doors and integrated handles" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
       </div>
+    </div>
+    <!-- Inline stats row -->
+    <div style="display:flex;gap:3rem;justify-content:center;flex-wrap:wrap;margin-top:4rem;padding-top:3rem;border-top:1px solid var(--border-light);">
+      <div style="text-align:center;"><p style="font-family:'DM Sans',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);line-height:1;">12+</p><p style="font-family:'Inter',sans-serif;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-secondary);margin-top:.4rem;">Years of Craft</p></div>
+      <div style="text-align:center;"><p style="font-family:'DM Sans',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);line-height:1;">500+</p><p style="font-family:'Inter',sans-serif;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-secondary);margin-top:.4rem;">Wardrobes Installed</p></div>
+      <div style="text-align:center;"><p style="font-family:'DM Sans',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);line-height:1;">100%</p><p style="font-family:'Inter',sans-serif;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-secondary);margin-top:.4rem;">Custom Designed</p></div>
+      <div style="text-align:center;"><p style="font-family:'DM Sans',sans-serif;font-size:2.5rem;font-weight:500;color:var(--color-accent);line-height:1;">10yr</p><p style="font-family:'Inter',sans-serif;font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--color-text-secondary);margin-top:.4rem;">Workmanship Warranty</p></div>
     </div>
   </div>
 </section>
+
+<!-- Portfolio Gallery -->
+<section style="padding:0;background:#111111;">
+  <div style="padding:5rem 0 3rem;text-align:center;">
+    <div class="container">
+      <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-copper);margin-bottom:1rem;">
+        <span style="display:block;width:28px;height:1px;background:var(--color-copper);"></span>
+        Portfolio
+        <span style="display:block;width:28px;height:1px;background:var(--color-copper);"></span>
+      </div>
+      <h2 style="font-family:'DM Sans','Inter',sans-serif;font-weight:300;font-size:clamp(2rem,4vw,3.25rem);color:var(--color-text-inverse);margin-bottom:.75rem;">Our Collections</h2>
+      <p style="font-family:'Inter',sans-serif;font-size:.92rem;font-weight:300;color:rgba(245,245,245,.45);max-width:480px;margin:0 auto;line-height:1.8;">Hinged, sliding, and flush-panel designs — each crafted to the exact dimensions of your space.</p>
+    </div>
+  </div>
+  <div class="ia-gallery ia-gallery--trio">
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-armadi-anta-battente-astipalea-anteprima.jpg" alt="Astipalea wardrobe — textured panel doors with soft-close hinges" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Astipalea</h3><p>Textured panels · Soft-close hinges</p></div>
+    </div>
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-armadi-anta-battente-glass-anteprima-1.jpg" alt="Glass-front wardrobe with frosted panels and LED interior lighting" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Glass</h3><p>Frosted glass · LED illumination</p></div>
+    </div>
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-armadi-anta-battente-naos-anteprima-4.jpg" alt="Naos wardrobe — timber veneer with brushed brass handles" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Naos</h3><p>Timber veneer · Brushed brass</p></div>
+    </div>
+  </div>
+  <div class="ia-gallery ia-gallery--duo" style="margin-top:4px;">
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-armadi-anta-battente-sketch-2024-anteprima.jpg" alt="Sketch 2024 wardrobe — contemporary linear detailing" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Sketch 2024</h3><p>Linear detailing · Contemporary profile</p></div>
+    </div>
+    <div class="ia-gallery-item">
+      <img src="/images/presotto/wd-armadi-anta-battente-tau-anteprima-3.jpg" alt="Tau wardrobe — warm tones with European hardware" loading="lazy">
+      <div class="ia-gallery-caption"><h3>Tau</h3><p>Warm palette · European hardware</p></div>
+    </div>
+  </div>
+  <div style="padding:3rem 0 5rem;text-align:center;">
+    <a href="/contact/" class="ia-btn-primary" style="display:inline-flex;align-items:center;gap:.6rem;">
+      Discuss Your Wardrobe
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Interior Split -->
+<div class="ia-split ia-split--reverse">
+  <div class="ia-split-image">
+    <img src="/images/presotto/armadi-anta-battente-liscia-intro-1.jpg" alt="Built-in wardrobe interior showing custom drawer configuration and hanging rail layout" loading="lazy">
+  </div>
+  <div class="ia-split-content">
+    <div style="display:inline-flex;align-items:center;gap:.75rem;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--color-accent);margin-bottom:1.5rem;">
+      <span style="display:block;width:28px;height:1px;background:var(--color-accent);"></span>Interiors
+    </div>
+    <h2 style="font-family:'DM Sans','Inter',sans-serif;font-weight:600;font-size:clamp(1.75rem,3vw,2.5rem);line-height:1.1;color:var(--color-primary);margin-bottom:1.25rem;">Configured Around the Way You Live</h2>
+    <p style="font-family:'Inter',sans-serif;font-size:.93rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);margin-bottom:1.25rem;">Every interior is bespoke. We map your wardrobe habits &mdash; the folded knits, the hanging dresses, the belt collection &mdash; and build a configuration that keeps everything visible, accessible, and beautiful.</p>
+    <p style="font-family:'Inter',sans-serif;font-size:.93rem;font-weight:300;line-height:1.85;color:var(--color-text-secondary);">Pull-out drawers with soft-close runners, adjustable shelving, dedicated jewellery inserts, full-extension trouser rails, and tie racks. All wrapped in your choice of melamine, timber veneer, or linen-textured panels.</p>
+  </div>
+</div>
 
 <!-- Features -->
 <section style="padding:6rem 0;background:#fff;">
@@ -179,6 +232,22 @@
     </div>
   </div>
 </section>
+
+<!-- Horizontal product strip -->
+<div class="ia-imgrow" style="background:#111111;">
+  <div class="ia-imgrow-item">
+    <img src="/images/presotto/wd-armadi-anta-battente-alibi-anteprima.jpg" alt="Alibi wardrobe — minimalist flush-door profile" loading="lazy">
+  </div>
+  <div class="ia-imgrow-item">
+    <img src="/images/presotto/wd-armadi-anta-battente-newone-anteprima-2.jpg" alt="NewOne wardrobe — contemporary matte finish" loading="lazy">
+  </div>
+  <div class="ia-imgrow-item">
+    <img src="/images/presotto/wd-armadi-anta-battente-querini-anteprima.jpg" alt="Querini wardrobe — refined European craftsmanship" loading="lazy">
+  </div>
+  <div class="ia-imgrow-item">
+    <img src="/images/presotto/wd-armadi-anta-battente-liscia-anteprima-2.jpg" alt="Liscia wardrobe — smooth lacquer door panels" loading="lazy">
+  </div>
+</div>
 
 <!-- Process -->
 <section style="padding:7rem 0;background:var(--color-primary);color:var(--color-text-inverse);">
@@ -252,7 +321,7 @@
   <div class="container">
     <div class="ia-ft-rule"></div>
     <div class="ia-ft-brand">
-      <img src="/images/inbuilt_white.png" alt="Inbuilt Atelier" class="ia-ft-logo">
+      <img src="/images/tex_inbuilt_white.png" alt="Inbuilt Atelier" class="ia-ft-logo">
     </div>
     <nav class="ia-ft-nav">
       <a href="/service/ai-assistants/">Built-In Wardrobes</a>
